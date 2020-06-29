@@ -23,7 +23,6 @@ global $access_token,$collector_id,$notificationJSON,$country_id;
 
     
 function curl_call($method,$url,$json){
-    alert("curl_call");
 	$integrator_id_test="";
 	$method = strtoupper($method);
 	$headers = array("Content-Type: application/json","X-integrator-id: $integrator_id_test");
@@ -39,7 +38,6 @@ function curl_call($method,$url,$json){
 
     curl_setopt_array($ch, $options);
     $response = curl_exec($ch);
-    alert(JSON.stringify($response));
    curl_close($ch);
    return $response;
 

@@ -325,44 +325,44 @@ $(document).ready(function() {
 		// REVISA AQUÍ:
 		// Modifica el storeJSON con la estructura necesaria para crear una Store correctamente.
 
-		var storeJSON = {
+		var storeJSON;
+		storeJSON = {
 
-			"name":storeName,
-			"business_hours":{
-				"monday":[
+			"name": "Sucursal Instore",
+			"business_hours": {
+				"monday": [
 					{
-						"open":"08:00",
-						"close":"13:00"
+						"open": "08:00",
+						"close": "13:00"
 					},
 					{
-						"open":"15:00",
-						"close":"18:00"
+						"open": "15:00",
+						"close": "18:00"
 					}
 				],
-				"tuesday":[
+				"tuesday": [
 					{
-						"open":"08:00",
-						"close":"18:00"
+						"open": "08:00",
+						"close": "18:00"
 					}
 				]
 			},
-			"location":{
-				"city_name":city,
-				"latitude":latitude,
-				"longitude":longitude,
-				"reference":addressReference,
-				"state_name":state,
-				"street_name":streetName,
-				"street_number":streetNumber
+			"location": {
+				"street_number": "3039",
+				"street_name": "Caseros",
+				"city_name": "Belgrano",
+				"state_name": "Capital Federal",
+				"latitude": -32.8897322,
+				"longitude": -68.8443275,
+				"reference": "3er Piso"
 			},
-			"external_id" :externalStoreID
-		}
-		alert(JSON.stringify(storeJSON));
+			"external_id": "STORE001"
+		};
 		console.log(storeJSON);
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
 			console.log(results);
-			alert(JSON.stringify(results));
+
 			$("#responseStore").text(JSON.stringify(results));
 		});
 	});
