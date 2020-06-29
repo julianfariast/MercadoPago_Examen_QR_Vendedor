@@ -327,37 +327,36 @@ $(document).ready(function() {
 
 
 		var storeJSON = {
-			"external_id": "STORE001",
-			"name": "Sucursal Instore",
 
-			"location": {
-				"street_number": "3039",
-				"street_name": "Caseros",
-				"city_name": "Belgrano",
-				"state_name": "Capital Federal",
-				"latitude": -32.8897322,
-				"longitude": -68.8443275,
-				"reference": "3er Piso"
-			},
-			"business_hours": {
-				"monday": [
+			"name":storeName,
+			"business_hours":{
+				"monday":[
 					{
-						"open": "08:00",
-						"close": "13:00"
+						"open":"08:00",
+						"close":"13:00"
 					},
 					{
-						"open": "15:00",
-						"close": "18:00"
+						"open":"15:00",
+						"close":"18:00"
 					}
 				],
-				"tuesday": [
+				"tuesday":[
 					{
-						"open": "08:00",
-						"close": "18:00"
+						"open":"08:00",
+						"close":"18:00"
 					}
 				]
-			}
-
+			},
+			"location":{
+				"city_name":city,
+				"latitude":latitude,
+				"longitude":longitude,
+				"reference":addressReference,
+				"state_name":state,
+				"street_name":streetName,
+				"street_number":streetNumber
+			},
+			"external_id" :externalStoreID
 		};
 		console.log(storeJSON);
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
