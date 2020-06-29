@@ -325,10 +325,20 @@ $(document).ready(function() {
 		// REVISA AQUÍ:
 		// Modifica el storeJSON con la estructura necesaria para crear una Store correctamente.
 
-		var storeJSON;
-		storeJSON = {
 
+		var storeJSON = {
+			"external_id": "STORE001",
 			"name": "Sucursal Instore",
+
+			"location": {
+				"street_number": "3039",
+				"street_name": "Caseros",
+				"city_name": "Belgrano",
+				"state_name": "Capital Federal",
+				"latitude": -32.8897322,
+				"longitude": -68.8443275,
+				"reference": "3er Piso"
+			},
 			"business_hours": {
 				"monday": [
 					{
@@ -346,17 +356,8 @@ $(document).ready(function() {
 						"close": "18:00"
 					}
 				]
-			},
-			"location": {
-				"street_number": "3039",
-				"street_name": "Caseros",
-				"city_name": "Belgrano",
-				"state_name": "Capital Federal",
-				"latitude": -32.8897322,
-				"longitude": -68.8443275,
-				"reference": "3er Piso"
-			},
-			"external_id": "STORE001"
+			}
+
 		};
 		console.log(storeJSON);
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
