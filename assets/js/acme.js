@@ -326,8 +326,26 @@ $(document).ready(function() {
 		// Modifica el storeJSON con la estructura necesaria para crear una Store correctamente.
 
 		var storeJSON = {
-			"external_id" :externalStoreID,
+
 			"name":storeName,
+			"business_hours":{
+				"monday":[
+					{
+						"open":"08:00",
+						"close":"13:00"
+					},
+					{
+						"open":"15:00",
+						"close":"18:00"
+					}
+				],
+				"tuesday":[
+					{
+						"open":"08:00",
+						"close":"18:00"
+					}
+				]
+			},
 			"location":{
 				"city_name":city,
 				"latitude":latitude,
@@ -337,7 +355,7 @@ $(document).ready(function() {
 				"street_name":streetName,
 				"street_number":streetNumber
 			},
-			"bussines_hours":{}
+			"external_id" :externalStoreID
 		}
 
 		console.log(storeJSON);
