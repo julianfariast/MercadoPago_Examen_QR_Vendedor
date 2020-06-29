@@ -362,6 +362,7 @@ $(document).ready(function() {
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
 			console.log(results);
+			alert(JSON.stringify(results));
 			$("#responseStore").text(JSON.stringify(results));
 		});
 	});

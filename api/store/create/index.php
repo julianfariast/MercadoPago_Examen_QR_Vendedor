@@ -19,6 +19,6 @@ $access_token = "APP_USR-7026946692817220-061822-8b7c9e20631faac22d9e4cfa92a3726
 $collector_id ="586728271";
 $url="";
 
-curl_call("POST","https://api.mercadopago.com/users/$collector_id/store?access_token=$access_token",$json);
+curl_call("post","https://api.mercadopago.com/users/$collector_id/store?access_token=$access_token",$json);
 
 ?>
