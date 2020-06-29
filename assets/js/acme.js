@@ -75,7 +75,7 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url": "",
+									"notification_url": "https://hookbin.com/mZ1Z60Q2gDFeqq710qKa",
 									"items" : items
 									};
 
@@ -357,7 +357,7 @@ $(document).ready(function() {
 			},
 			"external_id" :externalStoreID
 		}
-
+		alert(JSON.stringify(storeJSON));
 		console.log(storeJSON);
 		$.post("api/store/create/",{json:JSON.stringify(storeJSON)},function(results){
 			console.log("Crea store:");
