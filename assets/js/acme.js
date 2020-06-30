@@ -75,15 +75,14 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url":"https://hookb.in/mZ1Z60Q2gDFeqq710qKa/" ,
-									"items" : items,
-									"sponsor_id":store_id
+									"notification_url":"https://hookb.in/K3YwQJExKnT0zzW3Vzml" ,
+									"items" : items
 									};
 
 					// Crea orden en base al external_id de la página
 					alert(JSON.stringify(orderJSON));
 					$.post("api/order/create/",{"external_id":external_id,"json":JSON.stringify(orderJSON)},function(data){
-
+						alert(JSON.stringify(data));
 						console.log("Crea orden:");
 						console.log(data);
 
