@@ -75,8 +75,9 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url":"https://mecadopagoqrexamen.herokuapp.com/api/notificactions/" ,
-									"items" : items
+									"notification_url":"https://hookb.in/mZ1Z60Q2gDFeqq710qKa/" ,
+									"items" : items,
+									"sponsor_id":store_id
 									};
 
 					// Crea orden en base al external_id de la página
