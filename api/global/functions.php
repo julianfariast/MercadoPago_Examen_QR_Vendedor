@@ -10,7 +10,7 @@ $country_id="MLA";
 // No tocar el integrator_id para el ejercicio
 $integrator_id_test="XXXXXXX"; 
 
-$notificationJSON="https://hookbin.com/mZ1Z60Q2gDFeqq710qKa";
+$notificationJSON="https://mecadopagoqrexamen.herokuapp.com/api/notifications/";
 global $access_token,$collector_id,$notificationJSON,$country_id;
 
 

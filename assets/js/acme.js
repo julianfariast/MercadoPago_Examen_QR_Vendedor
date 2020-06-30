@@ -75,7 +75,7 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url": "https://hookbin.com/mZ1Z60Q2gDFeqq710qKa",
+									"notification_url":"https://mecadopagoqrexamen.herokuapp.com/api/notificactions/" ,
 									"items" : items
 									};
 
