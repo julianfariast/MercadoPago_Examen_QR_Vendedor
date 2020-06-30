@@ -80,9 +80,7 @@ $(document).ready(function() {
 									};
 
 					// Crea orden en base al external_id de la página
-					alert(JSON.stringify(orderJSON));
 					$.post("api/order/create/",{"external_id":external_id,"json":JSON.stringify(orderJSON)},function(data){
-						alert(JSON.stringify(data));
 						console.log("Crea orden:");
 						console.log(data);
 
