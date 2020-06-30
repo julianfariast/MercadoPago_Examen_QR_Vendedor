@@ -11,7 +11,7 @@ global $access_token,$collector_id,$notificationJSON;
 
 $lastResource = file_get_contents('../notifications.txt');
 
-$url= "https://hookbin.com/K3YwQJExKnT0zzW3Vzml";
+$url= "https://hookb.in/K3YwQJExKnT0zzW3Vzml";
 
 // REVISAR AQUÍ:
 // Agrega la $url necesaria para revisar el estado del pago en base al recurso recibido de la notificación
