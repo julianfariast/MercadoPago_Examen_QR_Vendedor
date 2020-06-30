@@ -18,6 +18,6 @@ $url= "https://hookb.in/K3YwQJExKnT0zzW3Vzml";
 
 // Sustituye el método por su correspondiente: get, put, post, delete
 
-curl_call("get","$url",$notificationJSON);
+curl_call("get","$url","");
 
  ?>
