@@ -75,7 +75,7 @@ $(document).ready(function() {
 					// para recibir las notificaciones en tu endpoint público.
 
 					var orderJSON ={"external_reference": external_reference,
-									"notification_url":"https://hookb.in/K3YwQJExKnT0zzW3Vzml" ,
+									"notification_url":"https://hookb.in/2q8KEgnQW7H9BBKGpBgZ" ,
 									"items" : items
 									};
 
