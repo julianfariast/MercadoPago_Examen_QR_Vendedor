@@ -10,14 +10,14 @@ global $access_token,$collector_id,$notificationJSON;
 // Para ver el estado del pago.
 
 $lastResource = file_get_contents('../notifications.txt');
-printf($lastResource);
-$url= "https://hookb.in/K3YwQJExKnT0zzW3Vzml";
+
+$url= $lastResource;
 
 // REVISAR AQUÍ:
 // Agrega la $url necesaria para revisar el estado del pago en base al recurso recibido de la notificación
 
 // Sustituye el método por su correspondiente: get, put, post, delete
 
-curl_call("get","$url",$notificationJSON);
+curl_call("get","$url","");
 
  ?>
