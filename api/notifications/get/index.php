@@ -10,7 +10,7 @@ global $access_token,$collector_id,$notificationJSON;
 // Para ver el estado del pago.
 
 $lastResource = file_get_contents('../notifications.txt');
-
+print ($lastResource);
 $url= "https://hookb.in/K3YwQJExKnT0zzW3Vzml";
 
 // REVISAR AQUÍ:
