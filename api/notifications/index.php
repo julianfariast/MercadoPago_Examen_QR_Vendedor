@@ -21,7 +21,7 @@ $received_json = str_replace(",\n}","}",$received_json);
 
 $notification = json_decode($received_json,true);
 
-$n=2;
+$n=0;
 
 if(isset($notification['resource'])){$resource = $notification['resource'];$n=$n+1;}else{$resource= "";}
 if(isset($notification['topic'])){$topic =$notification['topic'];$n=$n+1;}else{$topic ="";}
